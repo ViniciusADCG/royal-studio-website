@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-dourado-50: #FBF9F6;
+  --color-dourado-100: #F5EFE6;
+  --color-dourado-400: #D4B86A;
+  --color-dourado-500: #C5A059; /* O nosso Dourado Champanhe principal */
+  --color-dourado-600: #A68340;
+}
+
 :root {
-  --background: #ffffff;
+  --background: #fffefe;
   --foreground: #171717;
 }
 
