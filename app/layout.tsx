@@ -1,21 +1,12 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from "next/font/google"; // Importação do Google Fonts
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from 'next/script';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// Configuração da nova fonte Inter
+const inter = Inter({ subsets: ["latin"] });
 
 
 // ... (configuração das fontes)
@@ -32,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth overflow-x-hidden">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen relative overflow-x-hidden`}>
+      <body className={`${inter.className} antialiased flex flex-col min-h-screen relative overflow-x-hidden`}>
         
         {/* ========================================== */}
         {/* GOOGLE ANALYTICS 4 (GA4)                   */}
