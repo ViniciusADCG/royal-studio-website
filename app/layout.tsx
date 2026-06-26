@@ -29,7 +29,7 @@ export default function RootLayout({
         {/* GOOGLE ANALYTICS 4 (GA4)                   */}
         {/* ========================================== */}
         <Script 
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" 
+          src="https://www.googletagmanager.com/gtag/js?id=G-YYT3NYVJ7W" 
           strategy="afterInteractive" 
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -61,7 +61,7 @@ export default function RootLayout({
 
         <div 
           className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/marmore.jpg')" }}
+          style={{ backgroundImage: "url('/marmoree.jpg')" }}
         />
         
         <Header />
