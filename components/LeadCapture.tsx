@@ -7,7 +7,7 @@ export default function LeadCapture() {
   const [status, setStatus] = useState<'ocioso' | 'enviando' | 'sucesso'>('ocioso');
 
   // ATENÇÃO: Cole a sua URL do Apps Script aqui
-  const scriptURL = "https://script.google.com/macros/s/AKfycbxwsyZlHa08bwcGyAzvV85DuZToGOnP1c4eXofK17fXUXfMvtSTRGC_Wv9E6iw7N2Te/exec"; 
+  const scriptURL = "https://script.google.com/macros/s/AKfycbzuzV5GTo3KnTzvbmElBPU4U0zVU9fQmOoXu7L6vCpgloMbsf5S9ejMy70RgmDekbLB/exec"; 
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
