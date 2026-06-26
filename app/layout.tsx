@@ -1,21 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Script from 'next/script'; // Importação adicionada
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// ... (configuração das fontes)
 
 export const metadata: Metadata = {
-  title: "Royal Studio  | Beauty-Academy",
+  title: "Royal Studio | Beauty-Academy",
   description: "Especialistas em extensão de cílios, design de sobrancelhas e alongamento de unhas.",
 };
 
@@ -26,25 +19,53 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth overflow-x-hidden">
-      {/* Limpamos o body e deixamos apenas as fontes e o layout flex */}
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen relative overflow-x-hidden`}>
         
-        {/* DIV DO FUNDO (Esta é a solução definitiva) */}
-        {/* Ela fica fixa (fixed), cobre tudo (inset-0) e fica atrás de tudo (-z-10) */}
+        {/* ========================================== */}
+        {/* GOOGLE ANALYTICS 4 (GA4)                   */}
+        {/* ========================================== */}
+        <Script 
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" 
+          strategy="afterInteractive" 
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YYT3NYVJ7W');
+          `}
+        </Script>
+
+        {/* ========================================== */}
+        {/* META PIXEL (FACEBOOK/INSTAGRAM)            */}
+        {/* ========================================== */}
+        <Script id="meta-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1373481554640257');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+
         <div 
           className="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/marmoree.jpg')" }}
+          style={{ backgroundImage: "url('/marmore.jpg')" }}
         />
         
-        {/* O nosso Header entra aqui, no topo de todas as páginas */}
         <Header />
         
-        {/* O conteúdo da página atual (a nossa vitrine) entra aqui */}
         <div className="flex-grow">
           {children}
         </div>
 
-        {/* O nosso Footer entra aqui, no fundo de todas as páginas */}
         <Footer />
         
       </body>
