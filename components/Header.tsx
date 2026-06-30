@@ -68,6 +68,7 @@ export default function Header() {
           <nav className="flex flex-col space-y-4">
             <a href="#inicio" onClick={fecharMenu} className="text-base font-medium text-gray-800 hover:text-dourado-500">Início</a>
             <a href="#servicos" onClick={fecharMenu} className="text-base font-medium text-gray-800 hover:text-dourado-500">Serviços</a>
+            <a href="#catalogo" onClick={fecharMenu} className="text-base font-medium text-gray-800 hover:text-dourado-500">Catálogo</a>
             <a href="#sobre" onClick={fecharMenu} className="text-base font-medium text-gray-800 hover:text-dourado-500">Sobre Nós</a>
           </nav>
         </div>

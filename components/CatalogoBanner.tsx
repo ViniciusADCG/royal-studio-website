@@ -7,7 +7,7 @@ export default function CatalogoBanner() {
         
         <div className="text-center md:text-left mb-6 md:mb-0 md:mr-8">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-3">
-            Quer ver todos os detalhes?
+            Catálogo de Procedimentos 
           </h2>
           <p className="text-slate-600 max-w-xl text-sm md:text-base">
             Visualize nosso catálogo digital completo e descubra todas as técnicas, valores e procedimentos exclusivos que preparamos para realçar a sua beleza.
