@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from 'next/script';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 // Configuração da nova fonte Inter
 const inter = Inter({ subsets: ["latin"] });
@@ -72,7 +72,7 @@ export default function RootLayout({
         </div>
 
         <Footer />
-        
+        <Analytics />
       </body>
     </html>
   );
