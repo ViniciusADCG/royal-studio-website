@@ -26,6 +26,7 @@ export default function Header() {
         <nav className="hidden md:flex space-x-8">
           <a href="#inicio" className="text-base font-semibold text-gray-800 hover:text-dourado-500 transition-colors">Início</a>
           <a href="#servicos" className="text-base font-semibold text-gray-800 hover:text-dourado-500 transition-colors">Serviços</a>
+          <a href="/catalogo.pdf" target="_blank" rel="noopener noreferrer" className="text-base font-semibold text-gray-800 hover:text-dourado-500 transition-colors">Catálogo</a>
           <a href="#sobre" className="text-base font-semibold text-gray-800 hover:text-dourado-500 transition-colors">Sobre Nós</a>
         </nav>
 

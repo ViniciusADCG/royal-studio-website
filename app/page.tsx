@@ -1,6 +1,7 @@
 import ServiceCard from "../components/ServiceCard";
 import HeroSection from "../components/HeroSection";
 import { ServiceData } from "../types/service";
+import CatalogoBanner from '@/components/CatalogoBanner'; 
 import LeadCapture from "../components/LeadCapture";
 
 const studioServices: ServiceData[] = [
@@ -77,6 +78,13 @@ export default function Home() {
 
         </div>
       </div>
+
+      {/* ... Fechamento da Seção de Cards de Serviços ... */}
+      
+      <CatalogoBanner />
+
+      {/* ... Abertura da Seção de Captura (Ganhe 10% de desconto) ... */}
+
       {/* Seção de Captura de Leads */}
       <LeadCapture/>
 
