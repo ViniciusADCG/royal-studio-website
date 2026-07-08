@@ -37,7 +37,7 @@ export default function LeadCapture() {
         {/* Texto da Promoção */}
         <div className="md:w-1/2 p-8 md:p-12 bg-dourado-50 flex flex-col justify-center">
           <h2 className="text-3xl font-extrabold text-gray-900 mb-4 tracking-tight">
-            Ganhe 10% de desconto no seu primeiro agendamento!
+            Ganhe 10 Reais de desconto no seu primeiro agendamento!
           </h2>
           <p className="text-gray-600 mb-6 text-lg">
             Deixe seu contato para receber o seu cupom exclusivo e ficar por dentro das nossas novidades. Nós entraremos em contato para agendar o seu melhor horário.
