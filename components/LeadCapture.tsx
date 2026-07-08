@@ -41,6 +41,7 @@ export default function LeadCapture() {
           </h2>
           <p className="text-gray-600 mb-6 text-lg">
             Deixe seu contato e receba um cupom exclusivo para usar no seu primeiro agendamento. Aproveite também para ficar por dentro das nossas novidades. Entraremos em contato para agendar o melhor horário para você!
+          </p>
         </div>
 
         {/* Formulário de Captura */}
