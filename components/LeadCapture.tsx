@@ -36,7 +36,7 @@ export default function LeadCapture() {
         
         {/* Texto da Promoção */}
         <div className="md:w-1/2 p-8 md:p-12 bg-dourado-50 flex flex-col justify-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-4 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-[1.1] tracking-tight max-w-[450px] mb-6">
             Seu primeiro agendamento com R$ 10 de desconto!
           </h2>
           <p className="text-gray-600 mb-6 text-lg">
